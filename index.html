@@ -2475,8 +2475,8 @@
         showStatus("This browser cannot create a local video export. Try a modern browser with MediaRecorder support.", "error");
         return;
       }
-      var resolution = window.confirm("Export at 1080p? Press Cancel for 720p.") ? 1080 : 720;
-      var fps = window.confirm("Use 30 FPS? Press Cancel for 24 FPS.") ? 30 : 24;
+      var resolution = 1080;
+      var fps = 30;
       exportInProgress = true;
       var canvas = document.createElement("canvas");
       canvas.width = Math.round(resolution * 16 / 9);
